@@ -1,8 +1,14 @@
 # Beach Cities Auto Clinic
 
-landing page for BCAC
+**Beach Cities Auto Clinic** is a auto repair shop based in Hermosa Beach California.
 
-Website link: https://quirky-yonath-8370e3.netlify.app
-Yelp link: https://www.yelp.com/biz/beach-cities-auto-clinic-hermosa-beach
+landing page for BCAC: https://quirky-yonath-8370e3.netlify.app
 
-**Beach Cities Auto Clinic** is a auto repair shop based in Hermosa Beach California,
+Yelp page: https://www.yelp.com/biz/beach-cities-auto-clinic-hermosa-beach
+
+useful information to display:
+
+- location
+- hours of operation
+- services
+- payment methods
