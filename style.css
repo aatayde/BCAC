@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', serif;
+  position: absolute;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+}
+
+/* Navigation */
+.navigation__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Nav Links */
+.navigation__list {
+  display: grid;
+}
+
+.navigation__item {
+  display: flex;
+}
+
+.navigation__link {
+  color: #333;
+}
+
+.hero img {
+  width: 100%;
+}
