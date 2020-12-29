@@ -49,6 +49,8 @@
       </ul>
       <p>Give us a <a href="tel:3105409400">Call</a>!</p>
     </section>
+
+    <section class="payment"></section>
     <footer class="footer__navigation">
       <ul class="footer__list">
         <li class="footer__item">
@@ -68,5 +70,10 @@
 
       Social media links
     </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+    <script>
+      paypal.Buttons().render('body');
+    </script>
   </body>
 </html>
