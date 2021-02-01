@@ -1,0 +1,16 @@
+// Section:  Services
+.services {
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+
+    &__content {
+    }
+
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/* Line boarder */
+section {
+  &.services,
+  &.locations,
+  &.payment,
+  &.operations {
+    border-bottom: 0.5rem solid $color-secondary;
+  }
+}

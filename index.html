@@ -3,43 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Beach Cities Auto Clinic | Welcome</title>
   </head>
   <body>
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#services" class="navigation__link">Services</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#locations" class="navigation__link">Locations</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#operations" class="navigation__link">Operation</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Payment</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#services" class="navigation__link"
+              ><svg class="navigation__icons">
+                  <use xlink:href="img/sprite.svg#icon-wrench"></use></svg
+              >
+              Services</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#locations" class="navigation__link"
+              >
+                <svg class="navigation__icons">
+                  <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                </svg>Locations</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#operations" class="navigation__link"
+              >
+                <svg class="navigation__icons">
+                  <use xlink:href="img/sprite.svg#icon-clock"></use>
+                </svg>Operation</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              >
+                <svg class="navigation__icons">
+                  <use xlink:href="img/sprite.svg#icon-credit-card"></use>
+                </svg>Payment</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="hero">
-      <img src="/img/BCAutoClinic_Logo_ColorWhite.jpg" alt="" />
+      <img src="/img/logo/BCAutoClinic_Logo_ColorWhite.jpg" alt="" />
     </section>
-    <section id="services" class="services">
-      <h3>Services</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est
-        ducimus vitae asperiores ea. Quo iste officiis rerum cupiditate, eum ad
-        consectetur laudantium! Suscipit unde iusto nesciunt, accusantium ab
-        tempora.
-      </p>
-    </section>
+
+    <!-- Section: Locations -->
     <section id="locations" class="locations">
       <h3>location details</h3>
       <p>421 Pacific Coast Hwy, Hermosa Beach, CA 90254</p>
     </section>
+
+    <!-- Section: Operations -->
     <section id="operations" class="operations">
       <h3>hours of operation</h3>
       <ul>
@@ -49,31 +73,65 @@
       </ul>
       <p>Give us a <a href="tel:3105409400">Call</a>!</p>
     </section>
-
-    <section class="payment"></section>
-    <footer class="footer__navigation">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#" class="footer__link">Company</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Contact us</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Privacy</a>
-        </li>
-        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-      </ul>
-
-      Social media links
-    </footer>
-
+    <!-- Section: Services -->
+    <section id="services" class="services">
+      <div class="services__container">
+        <div class="services__container__content">
+          <h3>Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est
+            ducimus vitae asperiores ea. Quo iste officiis rerum cupiditate, eum
+            ad consectetur laudantium! Suscipit unde iusto nesciunt, accusantium
+            ab tempora.
+          </p>
+        </div>
+        <div class="services__container__image">
+          <img src="img/IMG_0901.jpg" alt="volkswagon" />
+        </div>
+      </div>
+    </section>
+    
     <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
     <script>
       paypal.Buttons().render('body');
     </script>
+    <section class="payment">Payment options</section>
+
+
+    <footer class="footer">
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Company</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Contact Us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Careers</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Privary</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Terms</a>
+        </li>
+
+        <svg class="footer__icon">
+          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+        </svg>
+        <svg class="footer__icon">
+          <use xlink:href="img/sprite.svg#icon-yelp"></use>
+        </svg>
+        
+      </ul>
+      <p class="copyright">
+        &copy; Copyright 2021 by Beach Cities Auto Clinic
+      </p>
+    </footer>
+    
+
+    
+
+    </footer>
   </body>
 </html>

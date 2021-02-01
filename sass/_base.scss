@@ -1,0 +1,40 @@
+/* Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  // @include respond(widescreen) {
+  //   margin: revert;
+  // }
+}
+
+html {
+  // defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  // @include respond(tablet-landscape) {
+  //   font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  // }
+  // @include respond(tablet-portrait) {
+  //   font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  // }
+
+  // @include respond(widescreen) {
+  //   font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  // }
+}
+
+body {
+  padding: 3rem;
+
+  // @include respond(tablet-portrait) {
+  //   padding: 0;
+  // }
+  // position: absolute;
+  // display: grid;
+  // grid-gap: 1em;
+  // grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+}
