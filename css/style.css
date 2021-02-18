@@ -10,14 +10,29 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5) {
+    html {
+      font-size: 75%; } }
 
 body {
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .hero {
   margin-top: -22%; }
   .hero img {
     width: 100%; }
+
+.locations__map {
+  width: 100%; }
 
 /* Section - Navigation */
 /* Navigation */
@@ -148,3 +163,48 @@ p {
 /* Line boarder */
 section.services, section.locations, section.payment, section.operations {
   border-bottom: 0.5rem solid #e39f5d; }
+
+.footer {
+  background-color: #e39f5d;
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+  .footer__icons {
+    display: flex;
+    justify-content: space-evenly; }
+  .footer__icon {
+    width: 4.5rem;
+    height: 4.5rem; }
+    .footer__icon__yelp {
+      fill: #d32323; }
+    .footer__icon__facebook {
+      fill: #3b5998; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.4rem;
+    color: #eee;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s; }
+  .nav__link:hover, .nav__link:active {
+    background-color: rgba(238, 238, 238, 0.05);
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #222;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%; }

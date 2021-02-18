@@ -1,6 +1,45 @@
+// Clear fix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Absolute centering
 @mixin absoluteCenter {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+// Responsive design
+@mixin respond($breakpoint) {
+  // 600px
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  // 900px
+  @if $breakpoint == tablet-portrait {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  // 1200px
+  @if $breakpoint == tablet-landscape {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  // 1800px
+  @if $breakpoint == widescreen {
+    @media only screen and (min-width: 112.5) {
+      @content;
+    }
+  }
 }
