@@ -1,0 +1,19 @@
+.operations {
+  background-color: $color-secondary;
+  &__table {
+    display: flex;
+    justify-content: center;
+
+    &__body {
+      // border: 1px solid #333;
+      background-color: $color-white;
+      padding: 1em;
+      border-radius: 1em;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  td {
+    padding: 1em 1.5em;
+  }
+}
