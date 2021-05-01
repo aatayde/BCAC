@@ -27,12 +27,26 @@ body {
       padding: 0; } }
 
 .hero {
-  margin-top: -22%; }
+  margin-top: -22%;
+  margin-bottom: -15%; }
   .hero img {
     width: 100%; }
 
 .locations__map {
   width: 100%; }
+
+.operations {
+  background-color: #e39f5d; }
+  .operations__table {
+    display: flex;
+    justify-content: center; }
+    .operations__table__body {
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 1em;
+      box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5); }
+  .operations td {
+    padding: 1em 1.5em; }
 
 /* Section - Navigation */
 /* Navigation */
@@ -136,11 +150,33 @@ body {
     top: 0;
     transform: rotate(-135deg); }
 
-.services__container {
-  display: flex;
-  justify-content: space-evenly; }
-  .services__container__image img {
-    width: 100%; }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+  margin: 1rem; }
+
+.service {
+  position: relative;
+  width: 100%;
+  border-radius: 1em;
+  background-size: cover;
+  height: 28vh; }
+  .service__title {
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%); }
+  .service-maintenance {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url(../img/unsplash/engine.jpg); }
+  .service-repair {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url(../img/unsplash/repair.jpg); }
+  .service-recovery {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url(../img/unsplash/recovery.jpg); }
+  .service-other {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url(../img/unsplash/other.jpg); }
 
 /* Typography */
 body {
@@ -157,13 +193,10 @@ h3 {
 p {
   font-size: 1.6rem; }
 
-.operations ul li {
+.operations__table__body {
   font-size: 1.6rem; }
 
 /* Line boarder */
-section.services, section.locations, section.payment, section.operations {
-  border-bottom: 0.5rem solid #e39f5d; }
-
 .footer {
   background-color: #e39f5d;
   grid-column: full-start / full-end;

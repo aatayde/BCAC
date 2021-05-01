@@ -1,16 +1,58 @@
 // Section:  Services
 .services {
-  &__container {
-    display: flex;
-    justify-content: space-evenly;
+  // @media only screen and (max-width: $bp-small) {
+  //   margin: 6rem 0;
+  // }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
 
-    &__content {
-    }
+.service {
+  // background-color: #fff;
 
-    &__image {
-      img {
-        width: 100%;
-      }
-    }
+  // box-shadow: $box-shadow;
+
+  // fill: orangered;
+  // display: flex;
+  position: relative;
+  // justify-content: center;
+  width: 100%;
+  border-radius: 1em;
+  background-size: cover;
+  height: 28vh;
+
+  &__title {
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  // &__icon {
+  //   display: flex;
+  //   justify-content: center;
+  //   height: 4.5rem;
+  //   width: 4.5rem;
+  // }
+
+  &-maintenance {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%),
+      url(../img/unsplash/engine.jpg);
+  }
+  &-repair {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%),
+      url(../img/unsplash/repair.jpg);
+  }
+  &-recovery {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%),
+      url(../img/unsplash/recovery.jpg);
+  }
+  &-other {
+    background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%),
+      url(../img/unsplash/other.jpg);
   }
 }
