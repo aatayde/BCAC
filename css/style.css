@@ -21,16 +21,51 @@ html {
       font-size: 75%; } }
 
 body {
-  padding: 3rem; }
+  position: relative;
+  height: 100vh; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
 
 .hero {
-  margin-top: -22%;
-  margin-bottom: -15%; }
-  .hero img {
-    width: 100%; }
+  position: relative;
+  height: 100vh;
+  z-index: 1; }
+  .hero .bg-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden; }
+    .hero .bg-logo__content {
+      width: 100%; }
+  .hero .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    overflow: hidden; }
+    .hero .bg-video__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .hero__icons {
+    display: flex;
+    justify-content: space-evenly; }
+  .hero__icon {
+    width: 4.5rem;
+    height: 4.5rem; }
+    .hero__icon__yelp {
+      fill: #d32323; }
+    .hero__icon__facebook {
+      fill: #3b5998; }
+    .hero__icon__google {
+      fill: #ea4335; }
 
 .locations__map {
   width: 100%; }
@@ -197,42 +232,6 @@ p {
   font-size: 1.6rem; }
 
 /* Line boarder */
-.footer {
-  background-color: #e39f5d;
-  grid-column: full-start / full-end;
-  padding: 8rem; }
-  .footer__icons {
-    display: flex;
-    justify-content: space-evenly; }
-  .footer__icon {
-    width: 4.5rem;
-    height: 4.5rem; }
-    .footer__icon__yelp {
-      fill: #d32323; }
-    .footer__icon__facebook {
-      fill: #3b5998; }
-
-.nav {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 4rem; }
-  .nav__link:link, .nav__link:visited {
-    font-size: 1.4rem;
-    color: #eee;
-    text-decoration: none;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1.5rem;
-    display: block;
-    transition: all 0.2s; }
-  .nav__link:hover, .nav__link:active {
-    background-color: rgba(238, 238, 238, 0.05);
-    transform: translateY(-3px); }
-
 .copyright {
   font-size: 1.4rem;
   color: #222;

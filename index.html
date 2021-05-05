@@ -55,60 +55,110 @@
 
     <!-- HERO -->
     <section class="hero">
-      <img src="/img/logo/BCAutoClinic_Logo_ColorWhite.jpg" alt="" />
+      <!-- <img src="/img/logo/BCAutoClinic_Logo_ColorWhite.jpg" alt="" /> -->
+
+      <div class="bg-logo">
+        <img
+          src="img/logo/BCAutoClinic_Logo_ColorWhite(1).png"
+          alt="BCAC logo"
+          class="bg-logo__content"
+        />
+      </div>
+
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay="" muted="" loop="">
+          <source
+            src="video/Pexels Videos 2223417.mp4"
+            type="video/mp4"
+            alt="Engin Akyurt"
+          />
+          Browser not supported!
+        </video>
+      </div>
+
+      <div class="icons">
+        <!-- Facebook icon -->
+        <a href="https://www.facebook.com/BCACinc1/">
+          <svg class="icon icon__facebook">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <!-- Goole icon -->
+        <a
+          href="https://www.google.com/search?q=beach+cities+auto+clinic+inc&sxsrf=ALeKk02FaCSbr7wHd_EzZbz_X-WG6uxd0g%3A1620158363182&ei=m6eRYLC5Ctex0PEPsIKZsAs&oq=beach+cities+auto+clinic+inc&gs_lcp=Cgdnd3Mtd2l6EAMyAggmOgcIIxCwAxAnOgcIABBHELADOgkIABDJAxAWEB5QlrkBWPXAAWCuzwFoAXACeACAAakCiAG7BpIBBTAuNC4xmAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwjw8t2d6LDwAhXXGDQIHTBBBrYQ4dUDCA4&uact=5"
+        >
+          <svg class="icon icon__google">
+            <use xlink:href="img/sprite.svg#icon-google"></use>
+          </svg>
+        </a>
+
+        <!-- Yelp icon -->
+        <a
+          href="https://www.yelp.com/biz/beach-cities-auto-clinic-hermosa-beach"
+        >
+          <svg class="icon icon__yelp">
+            <use xlink:href="img/sprite.svg#icon-yelp"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar__icons">
+
+          <!-- Map icon -->
+          <a href="#">
+          <svg class="sidebar__icon">
+            <use xlink:href="img/sprite.svg#icon-map"></use>
+          </svg>
+        </a>
+
+          <!-- Phone icon -->
+          <a href="#">
+          <svg class="sidebar__icon">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+        </a>
+
+          <!-- Gallery icon -->
+          <a href="#">
+          <svg class="sidebar__icon">
+            <use xlink:href="img/sprite.svg#icon-image"></use>
+          </svg>
+        </a>
+          
+      </div>
+
+      <div class="footer">
+
+        <p class="copyright">
+          &copy; Copyright 2021 by Beach Cities Auto Clinic Inc.
+        </p>
+      </div>
     </section>
 
     <!-- Section: Services -->
-    <section id="services" class="services">
-      <!-- column x row Grid: 4x1 mobile, 2x2 tablet & larger -->
-
+    <!-- <section id="services" class="services">
       <div class="service service-maintenance">
-        <!-- <a href="#"> -->
-
         <h3 class="service__title">Maintenance</h3>
-        <!-- </a> -->
-        <!-- <svg class="service__icon">
-           <use xlink:href="img/sprite.svg#icon-facebook"></use>
-        </svg> -->
       </div>
 
       <div class="service service-repair">
-        <!-- <a href="#"> -->
-
         <h3 class="service__title">Repair</h3>
-        <!-- </a> -->
-        <!-- <svg class="service__icon">
-           <use xlink:href="img/sprite.svg#icon-facebook"></use>
-        </svg> -->
       </div>
       <div class="service service-recovery">
-        <!-- <a href="#"> -->
-
         <h3 class="service__title">Recovery</h3>
-        <!-- </a> -->
-        <!-- <svg class="service__icon">
-           <use xlink:href="img/sprite.svg#icon-facebook"></use>
-        </svg> -->
       </div>
       <div class="service service-other">
-        <!-- <a href="#"> -->
-
-        <!-- </a>  -->
         <h3 class="service__title">Other</h3>
-        <!-- <svg class="service__icon">
-           <use xlink:href="img/sprite.svg#icon-facebook"></use>
-        </svg> -->
       </div>
-    </section>
+    </section> -->
 
     <!-- Section: Operations -->
-    <section id="operations" class="operations">
+    <!-- <section id="operations" class="operations">
       <h3 class="operations__heading">hours of operation</h3>
       <table class="operations__table">
         <tbody class="operations__table__body">
-          <!-- <tr>
-            <td class="operations__table__body-title">Hours of operation</td>
-          </tr> -->
           </tr>
 
           <tr>
@@ -142,20 +192,25 @@
           <tr>
             <td>Holidays</td>
             <td>
-              <!-- <svg class="">
+              <svg class="">
                 <use xlink:href="img/sprite.svg#icon-clipboard"></use>
-              </svg> -->
+              </svg>
               Observed
             </td>
           </tr>
         </tbody>
       </table>
 
-      <p>Give us a <a href="tel:3105409400">Call</a>!</p>
-    </section>
+      <p>Give us a Call
+        <a href="tel:3105409400">
+          <svg class="icon__phone">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+        </a>!</p>
+    </section> -->
 
     <!-- Section: Locations -->
-    <section id="locations" class="locations">
+    <!-- <section id="locations" class="locations">
       <h3>location details</h3>
       <a href="https://goo.gl/maps/hhjL5LbDytPW99sX9"
         ><img
@@ -166,58 +221,12 @@
       <a href="https://goo.gl/maps/hhjL5LbDytPW99sX9"
         >421 Pacific Coast Hwy, Hermosa Beach, CA 90254</a
       >
-    </section>
+    </section> -->
 
     <!-- <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
     <script>
       paypal.Buttons().render('body');
     </script> -->
     <!-- <section class="payment">Payment options</section> -->
-
-    <footer class="footer">
-      <ul class="nav">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Company</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contact Us</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Careers</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Privary</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Terms</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Payment</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">FAQs</a>
-        </li>
-      </ul>
-
-      <div class="footer__icons">
-        <a href="https://www.facebook.com/BCACinc1/">
-          <svg class="footer__icon footer__icon__facebook">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-
-        <a
-          href="https://www.yelp.com/biz/beach-cities-auto-clinic-hermosa-beach"
-        >
-          <svg class="footer__icon footer__icon__yelp">
-            <use xlink:href="img/sprite.svg#icon-yelp"></use>
-          </svg>
-        </a>
-      </div>
-
-      <p class="copyright">
-        &copy; Copyright 2021 by Beach Cities Auto Clinic Inc.
-      </p>
-    </footer>
   </body>
 </html>

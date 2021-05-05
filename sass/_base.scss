@@ -28,7 +28,9 @@ html {
 }
 
 body {
-  padding: 3rem;
+  // padding: 3rem;
+  position: relative;
+  height: 100vh;
 
   @include respond(tablet-portrait) {
     padding: 0;

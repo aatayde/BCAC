@@ -1,63 +1,10 @@
-.footer {
-  background-color: $color-secondary;
-  grid-column: full-start / full-end;
-
-  padding: 8rem;
-
-  &__icons {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  &__icon {
-    width: 4.5rem;
-    height: 4.5rem;
-
-    &__yelp {
-      fill: $yelpy-red;
-    }
-    &__facebook {
-      fill: $color-facebook;
-    }
-  }
-}
-
-.nav {
-  list-style: none;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 4rem;
-
-  &__link:link,
-  &__link:visited {
-    font-size: 1.4rem;
-    color: #eee;
-    text-decoration: none;
-    font-family: $font-display;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1.5rem;
-    display: block;
-    transition: all 0.2s;
-  }
-
-  &__link:hover,
-  &__link:active {
-    background-color: rgba(#eee, 0.05);
-    transform: translateY(-3px);
-  }
-}
-
 .copyright {
   font-size: 1.4rem;
   color: $color-grey-dark-3;
   margin-top: 6rem;
-  // margin left right center trick
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
   width: 70%;
 }
