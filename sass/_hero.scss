@@ -7,17 +7,27 @@
   z-index: 1;
 
   // Grid
-  // display: grid;
-  // grid-template-rows: minmax(min-content, 50vh) auto auto 10vw 1fr;
+  display: grid;
+  // logo, video, social icons, sidebar icons, footer
+  grid-template-rows:
+    minmax(min-content, 10rem) repeat(2, min-content) auto
+    min-content;
+  grid-template-columns:
+    [full-start] minmax(1rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [sidebar-start] 8rem [sidebar-end center-end] minmax(1rem, 1fr) [full-end];
+  gap: 2rem;
 
   .bg-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // height: 100%;
+    // width: 100%;
     z-index: 1;
-    overflow: hidden;
+    // overflow: hidden;
+    grid-column: center-start / center-end;
+    grid-row: 2 / 3;
 
     &__content {
       width: 100%;
@@ -25,14 +35,16 @@
   }
 
   .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // height: 100%;
+    // width: 100%;
     z-index: -1;
-    opacity: 0.7;
-    overflow: hidden;
+    opacity: 0.8;
+    // overflow: hidden;
+    grid-column: full-start / full-end;
+    grid-row: 1 / -1;
 
     &__content {
       height: 100%;
@@ -40,33 +52,42 @@
       object-fit: cover;
     }
   }
+}
 
-  &__icons {
-    display: flex;
-    justify-content: space-evenly;
+.icons {
+  grid-column: col-start 4 / col-end 6;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: 4.5rem;
+  height: 4.5rem;
+
+  &__yelp {
+    fill: $yelpy-red;
+  }
+  &__facebook {
+    fill: $color-facebook;
   }
 
-  &__icon {
-    width: 4.5rem;
-    height: 4.5rem;
-
-    &__yelp {
-      fill: $yelpy-red;
-    }
-    &__facebook {
-      fill: $color-facebook;
-    }
-
-    &__google {
-      fill: $color-google;
-      // background: conic-gradient(
-      //     from -45deg,
-      //     #ea4335 110deg,
-      //     #4285f4 90deg 180deg,
-      //     #34a853 180deg 270deg,
-      //     #fbbc05 270deg
-      //   )
-      //   73% 55%/150% 150% no-repeat;
-    }
+  &__google {
+    fill: $color-google;
+    // background: conic-gradient(
+    //     from -45deg,
+    //     #ea4335 110deg,
+    //     #4285f4 90deg 180deg,
+    //     #34a853 180deg 270deg,
+    //     #fbbc05 270deg
+    //   )
+    //   73% 55%/150% 150% no-repeat;
   }
+}
+
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 2 / 4;
+  z-index: 3;
+  margin: auto;
 }

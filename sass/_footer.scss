@@ -1,7 +1,10 @@
+.footer {
+  grid-column: center-start / center-end;
+  grid-row: 5 / 6;
+}
 .copyright {
   font-size: 1.4rem;
   color: $color-grey-dark-3;
-  margin-top: 6rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
