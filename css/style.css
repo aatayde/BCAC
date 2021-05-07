@@ -32,8 +32,8 @@ body {
   height: 100vh;
   z-index: 1;
   display: grid;
-  grid-template-rows: minmax(min-content, 10rem) repeat(2, min-content) 1fr min-content;
-  grid-template-columns: [full-start] minmax(1rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [sidebar-start] 8rem [sidebar-end center-end] minmax(1rem, 1fr) [full-end];
+  grid-template-rows: minmax(min-content, 10rem) min-content 1fr min-content min-content;
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(1rem, 1fr) [full-end];
   gap: 1rem; }
   .hero .bg-logo {
     z-index: 1;
@@ -237,4 +237,5 @@ p {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  margin-bottom: 1rem;
   width: 70%; }

@@ -8,14 +8,14 @@
 
   // Grid
   display: grid;
-  // logo, video, social icons, sidebar icons, footer
+
   grid-template-rows:
-    minmax(min-content, 10rem) repeat(2, min-content) 1fr
+    minmax(min-content, 10rem) min-content 1fr min-content
     min-content;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-    [sidebar-start] 8rem [sidebar-end center-end] minmax(1rem, 1fr) [full-end];
+    [center-end] minmax(1rem, 1fr) [full-end];
   gap: 1rem;
 
   .bg-logo {
