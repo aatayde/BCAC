@@ -18,3 +18,11 @@ Items that will be implemented soon:
 
 - hover effect on icons will display additional information. on click, will give it functionality.
 - responsive design
+- https://git-lfs.github.com/ for large file sizes
+
+Issues to fix:
+
+- 100vh, no scrolling
+- align icons
+- responsiveness
+- video does not load due to large file size

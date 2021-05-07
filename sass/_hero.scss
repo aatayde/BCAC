@@ -10,13 +10,13 @@
   display: grid;
   // logo, video, social icons, sidebar icons, footer
   grid-template-rows:
-    minmax(min-content, 10rem) repeat(2, min-content) auto
+    minmax(min-content, 10rem) repeat(2, min-content) 1fr
     min-content;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [sidebar-start] 8rem [sidebar-end center-end] minmax(1rem, 1fr) [full-end];
-  gap: 2rem;
+  gap: 1rem;
 
   .bg-logo {
     // position: absolute;
@@ -55,9 +55,10 @@
 }
 
 .icons {
-  grid-column: col-start 4 / col-end 6;
-  grid-row: 3/4;
+  grid-column: full-start / full-end;
+  grid-row: 4/5;
   display: flex;
+  align-items: end;
   justify-content: space-evenly;
 }
 
@@ -83,11 +84,4 @@
     //   )
     //   73% 55%/150% 150% no-repeat;
   }
-}
-
-.sidebar {
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 2 / 4;
-  z-index: 3;
-  margin: auto;
 }
