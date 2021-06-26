@@ -5,12 +5,14 @@
   // background-size: 100%;
   // background-repeat: no-repeat;
   z-index: 1;
+  // Testing Values
+  background-color: orange;
 
   // Grid
   display: grid;
 
   grid-template-rows:
-    minmax(min-content, 10rem) min-content 1fr min-content
+    minmax(min-content, 6rem) min-content 1fr min-content
     min-content;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr)
@@ -35,11 +37,6 @@
   }
 
   .bg-video {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // height: 100%;
-    // width: 100%;
     z-index: -1;
     opacity: 0.8;
     overflow: hidden;
@@ -60,6 +57,7 @@
   display: flex;
   align-items: end;
   justify-content: space-evenly;
+  z-index: 4;
 }
 
 .icon {
@@ -84,4 +82,15 @@
     //   )
     //   73% 55%/150% 150% no-repeat;
   }
+}
+
+.overlay {
+  // width: 90%;
+  justify-self: center; // align horizontally
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  box-shadow: $box-shadow-big;
+  border-radius: 2rem;
 }

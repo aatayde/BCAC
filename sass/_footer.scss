@@ -1,6 +1,7 @@
 .footer {
   grid-column: center-start / center-end;
   grid-row: 5 / 6;
+  z-index: 4;
 }
 .copyright {
   font-size: 1.4rem;

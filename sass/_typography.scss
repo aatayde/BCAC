@@ -21,4 +21,13 @@ p {
 }
 .operations__table__body {
   font-size: 1.6rem;
+
+  &__heading {
+    font-weight: bold;
+  }
+
+  &__header__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
 }
