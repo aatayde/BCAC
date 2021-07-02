@@ -6,7 +6,7 @@
   // background-repeat: no-repeat;
   z-index: 1;
   // Testing Values
-  background-color: orange;
+  // background-color: orange;
 
   // Grid
   display: grid;
@@ -28,6 +28,7 @@
     // width: 100%;
     z-index: 1;
     // overflow: hidden;
+
     grid-column: center-start / center-end;
     grid-row: 2 / 3;
 

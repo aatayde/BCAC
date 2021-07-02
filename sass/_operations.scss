@@ -3,6 +3,10 @@
   grid-row: 3 / 3;
   grid-column: center-start / center-end;
 
+  @include respond(phone) {
+    grid-column: full-start / full-end;
+  }
+
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -32,7 +36,8 @@
 
       &__phone {
         text-decoration: none;
-        text-align: center;
+        display: flex;
+        align-items: center;
       }
 
       &__header,
@@ -43,19 +48,12 @@
         .icon__info {
           height: 2rem;
           width: 2rem;
-
-          &:hover {
-            // height: 100px;
-            // width: 100px;
-            // background-color: $overlay;
-            // content: '';
-          }
         }
       }
     }
   }
 
   td {
-    padding: 1em 1.5em;
+    padding: 0.8em 1.5em;
   }
 }

@@ -10,11 +10,11 @@ Yelp page: https://www.yelp.com/biz/beach-cities-auto-clinic-hermosa-beach
 
 useful information to display:
 
-- location
+- location: displayed by google maps API. Please read [documentation](https://developers.google.com/maps/documentation/javascript/overview) for more information.
 - hours of operation
 - services
 
-Items that will be implemented soon:
+Items that will be implemented:
 
 - hover effect on icons will display additional information. on click, will give it functionality.
 - responsive design
