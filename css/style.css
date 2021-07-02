@@ -87,7 +87,7 @@ body {
     .locations {
       grid-column: full-start / full-end; } }
   .locations:target {
-    width: 102%;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.3);
@@ -113,7 +113,7 @@ body {
     .operations {
       grid-column: full-start / full-end; } }
   .operations:target {
-    width: 102%;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.3);
@@ -175,7 +175,7 @@ p {
     .gallery {
       grid-column: full-start / full-end; } }
   .gallery:target {
-    width: 102%;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.3);

@@ -12,7 +12,7 @@
   transition: all 0.3s;
 
   &:target {
-    width: 102%;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     background-color: $overlay;
